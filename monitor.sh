@@ -11,7 +11,7 @@ echo "CPU Usage: $cpu_usage%"
 
 mem_total=$( grep MemTotal /proc/meminfo | awk '{print $2}' )
 
-# meminfo file contain current memory usage on your system, along with some other information about your memory
+# meminfo file contains current memory usage on your system, along with some other information about your memory
 # MemTotal is the total usable memory in your system
 
 mem_available=$( grep MemAvailable /proc/meminfo | awk '{print $2}' )
